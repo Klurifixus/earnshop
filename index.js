@@ -1,19 +1,12 @@
-var made = 40;
-var spent = 65;
-
-function dailyBattle(){
-    console.log("Today I made $" + made)
-    console.log("Today I spent $" + spent)
-    var totalMoney = made - spent
-    
-    if (totalMoney >= 0){
-        console.log("Total money for today $" + totalMoney)
-        console.log("I won today's battle.")
-    }
-    if (totalMoney < 0){
-        totalMoney = totalMoney * -1
-        console.log("Total money for today - $" + totalMoney)
-        console.log("I failed today's battle.")
-    }
+function showReview(){
+    //document.querySelector('.review-con').style.opacity = '100';
+    //document.querySelector('.product-img').style.filter = 'brightness(0.4)';
+    document.querySelector('.review-con').classList.toggle('hover-review');
+    document.querySelector('.product-img').classList.toggle("hover-img");
 }
-
+function hideReview(){
+    //document.querySelector('.review-con').style.opacity = '0';
+    //document.querySelector('.product-img').style.filter = 'brightness(1)';
+    document.querySelector('.review-con').classList.toggle('hover-review');
+    document.querySelector('.product-img').classList.toggle("hover-img");
+}
